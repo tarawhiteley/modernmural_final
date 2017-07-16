@@ -539,8 +539,9 @@ main {
 /* Create your own mural page */
 .submitMural {
   width: 60%;
-  margin: auto;
+  margin: 100px auto;
 }
+
 
 input[type="submit"], input[type="reset"] {
   margin: 20px 0 0 0;
@@ -556,7 +557,10 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 
 form {
   margin: 50px 0;
-  padding: 10px;
+}
+
+label {
+  margin: 10px 0;
 }
 
 fieldset {
@@ -571,6 +575,71 @@ fieldset {
 
 textarea {
   border: 1px solid #a7d5bf;
+  margin: 10px;
+}
+
+.formspace {
+  padding: 5px;
+}
+
+/* Custom File Upload https://codepen.io/wallaceerick/pen/fEdrz */
+.custom-file-upload-hidden {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
+.custom-file-upload {
+    display: block;
+    width: auto;
+    font-size: 16px;
+    margin-top: 30px;
+    //border: 1px solid #ccc;
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+.file-upload-wrapper {
+    position: relative;
+    margin-bottom: 5px;
+    //border: 1px solid #ccc;
+}
+.file-upload-input {
+    width: $file-upload-size;
+    color: #fff;
+    font-size: 16px;
+    padding: 11px 17px;
+    border: none;
+    background-color: $file-upload-color;
+    @include transition(all 0.2s ease-in);
+    float: left; /* IE 9 Fix */
+    &:hover, &:focus {
+        background-color: darken($file-upload-color, 5);
+        outline: none;
+    }
+}
+.file-upload-button {
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 11px 20px;
+    border: none;
+    margin-left: -1px;
+    background-color: #27aae1;
+    float: left; /* IE 9 Fix */
+    @include transition(all 0.2s ease-in);
+    &:hover {
+        background-color: darken($file-upload-color, 20);
+    }
+}
+
+input [type="file"] {
+  background-color: #27aae1;
+  color: white;
 }
 
 /* footer styling */
