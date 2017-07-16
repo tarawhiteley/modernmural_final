@@ -55,7 +55,7 @@ h6, p {
 }
 
 h6 {
-  border-bottom: 1% solid;
+  border-bottom: 1% solid #a7d5bf;
 }
 
 body {
@@ -124,7 +124,7 @@ a:visited {
   width: 50vw;
 }
 
-#social_media {
+.social_media {
   text-align: left;
 }
 
@@ -389,7 +389,15 @@ main {
 	clear: both;
 }
 
+.bottomborder {
+	border-bottom: 8px solid #a7d5bf;
+}
+
 /* contact page about page */
+
+.hide {
+  display: none;
+}
 
 .sectionHeader {
   font-size: 3.8em;
@@ -398,7 +406,7 @@ main {
   color: #2bb672;
 }
 
-.contactAside h1, .aboutSection h1, .submitMural h1 {
+.contactAside h2, .aboutSection h2, .submitMural h2 {
 	font-size: 3.4em;
 }
 
@@ -474,10 +482,20 @@ main {
   padding-bottom: 20px;
 }
 
-.contactSection p, .worksSection p, .submitMural p {
+.worksSection p, .submitMural p {
 	color: #003333;
 	padding-top: 10px;
 	font-size: 1.2em;
+}
+
+.contactSection p {
+  color: #27aae1;
+  padding-top: 10px;
+  font-size: 1.2em;
+}
+
+.contactSection h2 {
+  color: #27aae1;
 }
 
 .contactSection a:link, .aboutSection a:link, .contactSection a:visited, .aboutSection a:visited, .submitMural a:link, .submitMural a:visited {
@@ -503,7 +521,7 @@ main {
   border-bottom: 8px solid #a7d5bf;
 }
 
-.worksSection h1, .worksSection p {
+.worksSection h2, .worksSection p {
   width: 50%;
   margin: auto;
 }
