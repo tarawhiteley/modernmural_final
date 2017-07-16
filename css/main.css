@@ -398,7 +398,7 @@ main {
   color: #2bb672;
 }
 
-.contactAside h1, .aboutSection h1 {
+.contactAside h1, .aboutSection h1, .submitMural h1 {
 	font-size: 3.4em;
 }
 
@@ -474,19 +474,19 @@ main {
   padding-bottom: 20px;
 }
 
-.contactSection p, .worksSection p {
+.contactSection p, .worksSection p, .submitMural p {
 	color: #003333;
 	padding-top: 10px;
 	font-size: 1.2em;
 }
 
-.contactSection a:link, .aboutSection a:link, .contactSection a:visited, .aboutSection a:visited {
+.contactSection a:link, .aboutSection a:link, .contactSection a:visited, .aboutSection a:visited, .submitMural a:link, .submitMural a:visited {
 	color: #27aae1;
 	padding-top: 10px;
 	font-size: 1em;
 }
 
-.contactAside a:hover, .aboutSection a:hover, .worksSection a:hover, .aboutAside a:hover {
+.contactAside a:hover, .aboutSection a:hover, .worksSection a:hover, .aboutAside a:hover, .submitMural a:hover {
 	color: #2bb672;
 }
 
@@ -518,7 +518,42 @@ main {
 
 }
 
+/* Create your own mural page */
+.submitMural {
+  width: 60%;
+  margin: auto;
+}
 
+input[type="submit"], input[type="reset"] {
+  margin: 20px 0 0 0;
+  padding: 5px;
+  background-color: #b3cdd7;
+  color: white;
+  margin-bottom: 100px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #a7d5bf;
+}
+
+form {
+  margin: 50px 0;
+  padding: 10px;
+}
+
+fieldset {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #a7d5bf;
+}
+
+.logo a:hover {
+  opacity: 1;
+}
+
+textarea {
+  border: 1px solid #a7d5bf;
+}
 
 /* footer styling */
 
