@@ -391,6 +391,7 @@ main {
 
 .bottomborder {
 	border-bottom: 8px solid #a7d5bf;
+  width: 100%;
 }
 
 /* contact page about page */
